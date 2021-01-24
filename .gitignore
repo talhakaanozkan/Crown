@@ -107,4 +107,4 @@ dist
 .tern-port
 
 # Visual Studio Code file
-.vscode
+.vscode/
