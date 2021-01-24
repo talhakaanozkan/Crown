@@ -1,20 +1,20 @@
 {
   "name": "crown",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Crown",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "build" : "electron-packager ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/talhakaanozkan/crown.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "talhakaanozkan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/talhakaanozkan/crown/issues"
@@ -26,10 +26,14 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.54",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
     "@electron-forge/maker-zip": "^6.0.0-beta.54",
-    "electron": "^11.2.0"
+    "electron": "^11.2.1",
+    "electron-packager": "^15.2.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-view-renderer": "^1.2.5",
+    "league-connect": "^5.0.2",
+    "util": "^0.12.3"
   },
   "config": {
     "forge": {
